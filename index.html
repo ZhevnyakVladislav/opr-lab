@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab</title>
+        <link rel="stylesheet" href="bulma.css">
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <div class="section">
+            <div calss="container">
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <label class="label">Инвестиции: </label>
+                            <div class="control">
+                                <input class="input" type="text" id="investments" placeholder="0" value="0">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <label class="label">Кол-во предприятий: </label>
+                            <div class="control">
+                                <input class="input" type="text" id="count" placeholder="0" value="0">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <label class="label">Шаг: </label>
+                            <div class="control">
+                                <input class="input" type="text" id="stepValue" placeholder="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-clearfix">
+                        <a class="button is-success is-pulled-right" id="process">Рассчитать</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <table class="table" id="conditions">
+                            </table>
+                        </div>
+                        <div class="column">
+                            <table class="table" id="solution">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
